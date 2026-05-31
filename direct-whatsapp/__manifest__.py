@@ -44,5 +44,8 @@ Supported Odoo version: 18.0
     ],
     'images': [
         'static/description/icon.png',
+        'static/description/screenshot1.png',
+        'static/description/screenshot2.png',
+        'static/description/screenshot3.png',
     ],
 }

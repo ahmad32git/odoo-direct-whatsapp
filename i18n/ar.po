@@ -1,0 +1,92 @@
+# Arabic Translation for WhatsApp Direct Link
+# Copyright (C) 2024 Hasan Mustafa
+# This file is distributed under the LGPL-3 license.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Module WhatsApp Direct Link 18.0\n"
+"Report-Msgid-Bugs-To: support@sm-iot.com\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: Hasan Mustafa <support@sm-iot.com>\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: whatsapp_direct_link
+#: model:ir.model.fields,field_description:whatsapp_direct_link.field_res_partner__whatsapp_url
+msgid "WhatsApp Link"
+msgstr "رابط واتساب"
+
+#. module: whatsapp_direct_link
+#: model:ir.ui.view,arch_db:whatsapp_direct_link.view_partner_whatsapp_button
+msgid "WhatsApp"
+msgstr "واتساب"
+
+#. module: whatsapp_direct_link
+#: model:ir.model,name:whatsapp_direct_link.model_whatsapp_message_wizard
+msgid "WhatsApp Message Wizard"
+msgstr "معالج رسائل واتساب"
+
+#. module: whatsapp_direct_link
+#: model:ir.model.fields,field_description:whatsapp_direct_link.field_whatsapp_message_wizard__phone
+msgid "Phone / Mobile"
+msgstr "الهاتف / الجوال"
+
+#. module: whatsapp_direct_link
+#: model:ir.model.fields,field_description:whatsapp_direct_link.field_whatsapp_message_wizard__message
+msgid "Message"
+msgstr "الرسالة"
+
+#. module: whatsapp_direct_link
+#: model:ir.model.fields,field_description:whatsapp_direct_link.field_whatsapp_message_wizard__whatsapp_url
+msgid "WhatsApp URL"
+msgstr "رابط واتساب"
+
+#. module: whatsapp_direct_link
+#: model:ir.ui.view,arch_db:whatsapp_direct_link.view_whatsapp_message_wizard_form
+msgid "Send WhatsApp Message"
+msgstr "إرسال رسالة واتساب"
+
+#. module: whatsapp_direct_link
+#: model:ir.ui.view,arch_db:whatsapp_direct_link.view_whatsapp_message_wizard_form
+msgid "Send via WhatsApp"
+msgstr "إرسال عبر واتساب"
+
+#. module: whatsapp_direct_link
+#: model:ir.ui.view,arch_db:whatsapp_direct_link.view_whatsapp_message_wizard_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: whatsapp_direct_link
+#: model:ir.model.fields,field_description:whatsapp_direct_link.field_res_config_settings__whatsapp_partner_template
+msgid "Contact Message Template"
+msgstr "قالب رسالة جهة الاتصال"
+
+#. module: whatsapp_direct_link
+#: model:ir.model.fields,field_description:whatsapp_direct_link.field_res_config_settings__whatsapp_sale_template
+msgid "Sales Quotation Message Template"
+msgstr "قالب رسالة عرض السعر"
+
+#. module: whatsapp_direct_link
+#: model:ir.model.fields,field_description:whatsapp_direct_link.field_res_config_settings__whatsapp_invoice_template
+msgid "Invoice Message Template"
+msgstr "قالب رسالة الفاتورة"
+
+#. module: whatsapp_direct_link
+#: code:addons/whatsapp_direct_link/models/sale_order.py
+msgid "No phone number found for %s. Please add a mobile or phone number first."
+msgstr "لا يوجد رقم هاتف للعميل %s. الرجاء إضافة رقم الجوال أو الهاتف أولاً."
+
+#. module: whatsapp_direct_link
+#: code:addons/whatsapp_direct_link/models/account_move.py
+msgid "No phone number found for %s. Please add a mobile or phone number first."
+msgstr "لا يوجد رقم هاتف للعميل %s. الرجاء إضافة رقم الجوال أو الهاتف أولاً."
+
+#. module: whatsapp_direct_link
+#: code:addons/whatsapp_direct_link/wizards/whatsapp_message_wizard.py
+msgid "Please provide a valid phone number and message."
+msgstr "الرجاء إدخال رقم هاتف صحيح ورسالة."

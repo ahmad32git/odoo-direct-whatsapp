@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_whatsapp" model="ir.ui.view">
+        <field name="name">res.config.settings.view.whatsapp</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app string="WhatsApp Direct Link"
+                     data-string="WhatsApp Direct Link"
+                     name="whatsapp_direct_link">
+
+                    <block title="Contact Message Template">
+                        <setting
+                            string="Contact Template"
+                            help="Used when opening WhatsApp from a Contact. Placeholders: {partner_name}, {phone}">
+                            <field name="whatsapp_partner_template" widget="text" rows="4"/>
+                        </setting>
+                    </block>
+
+                    <block title="Sales Quotation Message Template">
+                        <setting
+                            string="Sales Quotation Template"
+                            help="Used when opening WhatsApp from a Sales Quotation. Placeholders: {partner_name}, {name}, {date_order}, {amount_total}, {currency}">
+                            <field name="whatsapp_sale_template" widget="text" rows="6"/>
+                        </setting>
+                    </block>
+
+                    <block title="Invoice Message Template">
+                        <setting
+                            string="Invoice Template"
+                            help="Used when opening WhatsApp from a Customer Invoice. Placeholders: {partner_name}, {name}, {invoice_date}, {invoice_date_due}, {amount_total}, {currency}">
+                            <field name="whatsapp_invoice_template" widget="text" rows="6"/>
+                        </setting>
+                    </block>
+
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

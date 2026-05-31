@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Default message templates loaded on module installation.
+    Admins can override these from General Settings → WhatsApp Direct Link.
+-->
+<odoo noupdate="1">
+
+    <record id="param_partner_template" model="ir.config_parameter">
+        <field name="key">whatsapp_direct_link.partner_template</field>
+        <field name="value">Hello {partner_name},
+
+We would like to get in touch with you.
+Please feel free to reach us at any time.
+
+Thank you!</field>
+    </record>
+
+    <record id="param_sale_template" model="ir.config_parameter">
+        <field name="key">whatsapp_direct_link.sale_template</field>
+        <field name="value">Hello {partner_name},
+
+Please find below the details of your quotation:
+
+Reference : {name}
+Date      : {date_order}
+Total     : {amount_total} {currency}
+
+Feel free to contact us for any questions.
+
+Thank you!</field>
+    </record>
+
+    <record id="param_invoice_template" model="ir.config_parameter">
+        <field name="key">whatsapp_direct_link.invoice_template</field>
+        <field name="value">Hello {partner_name},
+
+Please find below the details of your invoice:
+
+Invoice No : {name}
+Date       : {invoice_date}
+Due Date   : {invoice_date_due}
+Total      : {amount_total} {currency}
+
+Kindly arrange payment before the due date.
+
+Thank you!</field>
+    </record>
+
+</odoo>

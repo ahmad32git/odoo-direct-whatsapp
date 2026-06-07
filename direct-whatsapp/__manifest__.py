@@ -1,6 +1,6 @@
 {
     'name': 'WhatsApp Direct Link',
-    'version': '18.0.1.0.0',
+    'version': '16.0.1.0.0',
     'summary': 'Send WhatsApp messages directly from Contacts, Sales, and Invoices',
     'description': """
 WhatsApp Direct Link
@@ -17,7 +17,7 @@ Features
   General Settings (no developer mode needed).
 * **No API key required** – Uses the free ``api.whatsapp.com/send`` deep-link.
 
-Supported Odoo version: 18.0
+Supported Odoo version: 16.0
     """,
     'author': 'Hasan Mustafa',
     'website': 'https://sm-iot.com',

@@ -11,7 +11,7 @@
                         string="WhatsApp"
                         icon="fa-whatsapp"
                         class="btn-success"
-                        invisible="not partner_id"/>
+                        attrs="{'invisible': [('partner_id', '=', False)]}"/>
             </xpath>
         </field>
     </record>

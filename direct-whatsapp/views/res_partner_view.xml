@@ -6,6 +6,7 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='mobile']" position="after">
+                <field name="whatsapp_url" invisible="1"/>
                 <button name="action_open_whatsapp"
                         type="object"
                         string="WhatsApp"

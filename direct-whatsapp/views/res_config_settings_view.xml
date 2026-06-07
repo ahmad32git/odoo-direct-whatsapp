@@ -5,37 +5,72 @@
         <field name="model">res.config.settings</field>
         <field name="inherit_id" ref="base.res_config_settings_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//form" position="inside">
-                <app string="WhatsApp Direct Link"
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block"
                      data-string="WhatsApp Direct Link"
-                     name="whatsapp_direct_link">
+                     string="WhatsApp Direct Link"
+                     data-key="whatsapp_direct_link">
 
-                    <block title="Contact Message Template">
-                        <setting
-                            string="Contact Template"
-                            help="Used when opening WhatsApp from a Contact. Placeholders: {partner_name}, {phone}">
-                            <field name="whatsapp_partner_template" widget="text" rows="4"/>
-                        </setting>
-                    </block>
+                    <h2>Contact Message Template</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="whatsapp_partner_template" string="Contact Template"/>
+                                <div class="text-muted">
+                                    Used when opening WhatsApp from a Contact.
+                                    Placeholders: {partner_name}, {phone}
+                                </div>
+                                <field name="whatsapp_partner_template" widget="text"/>
+                            </div>
+                        </div>
+                    </div>
 
-                    <block title="Sales Quotation Message Template">
-                        <setting
-                            string="Sales Quotation Template"
-                            help="Used when opening WhatsApp from a Sales Quotation. Placeholders: {partner_name}, {name}, {date_order}, {amount_total}, {currency}">
-                            <field name="whatsapp_sale_template" widget="text" rows="6"/>
-                        </setting>
-                    </block>
+                    <h2>Sales Quotation Message Template</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="whatsapp_sale_template" string="Sales Quotation Template"/>
+                                <div class="text-muted">
+                                    Used when opening WhatsApp from a Sales Quotation.
+                                    Placeholders: {partner_name}, {name}, {date_order}, {amount_total}, {currency}
+                                </div>
+                                <field name="whatsapp_sale_template" widget="text"/>
+                            </div>
+                        </div>
+                    </div>
 
-                    <block title="Invoice Message Template">
-                        <setting
-                            string="Invoice Template"
-                            help="Used when opening WhatsApp from a Customer Invoice. Placeholders: {partner_name}, {name}, {invoice_date}, {invoice_date_due}, {amount_total}, {currency}">
-                            <field name="whatsapp_invoice_template" widget="text" rows="6"/>
-                        </setting>
-                    </block>
+                    <h2>Invoice Message Template</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="whatsapp_invoice_template" string="Invoice Template"/>
+                                <div class="text-muted">
+                                    Used when opening WhatsApp from a Customer Invoice.
+                                    Placeholders: {partner_name}, {name}, {invoice_date}, {invoice_date_due}, {amount_total}, {currency}
+                                </div>
+                                <field name="whatsapp_invoice_template" widget="text"/>
+                            </div>
+                        </div>
+                    </div>
 
-                </app>
+                </div>
             </xpath>
         </field>
     </record>
+
+    <record id="action_whatsapp_direct_link_config" model="ir.actions.act_window">
+        <field name="name">WhatsApp Direct Link</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module': 'whatsapp_direct_link'}</field>
+    </record>
+
+    <menuitem id="menu_whatsapp_direct_link_config"
+              name="WhatsApp Direct Link"
+              parent="base.menu_administration"
+              sequence="100"
+              action="action_whatsapp_direct_link_config"
+              groups="base.group_system"/>
 </odoo>

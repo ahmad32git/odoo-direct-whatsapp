@@ -1,7 +1,7 @@
 # WhatsApp Direct Link
 
 ## Overview
-An Odoo 18 module that adds WhatsApp integration across the system,
+An Odoo 17 module that adds WhatsApp integration across the system,
 allowing users to quickly contact customers and vendors via WhatsApp
 directly from Odoo records.
 
@@ -46,7 +46,7 @@ The popup message will include the following fields:
 ---
 
 ## Technical Stack
-- **Odoo Version:** 18.0
+- **Odoo Version:** 17.0
 - **Models extended:** `res.partner`, `account.move`, `sale.order`
 - **WhatsApp method:** `api.whatsapp.com/send?phone=X&text=MESSAGE`
   (no API key required)

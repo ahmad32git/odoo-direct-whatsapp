@@ -21,7 +21,7 @@ Supported Odoo version: 18.0
     """,
     'author': 'Hasan Mustafa',
     'website': 'https://sm-iot.com',
-    'support': 'support@sm-iot.com',
+    'support': 'sm_iot@qq.com',
     'category': 'Sales/CRM',
     'license': 'LGPL-3',
     'sequence': 10,
@@ -43,6 +43,7 @@ Supported Odoo version: 18.0
         'views/res_config_settings_view.xml',
     ],
     'images': [
+        'static/description/banner.png',
         'static/description/icon.png',
         'static/description/screenshot1.png',
         'static/description/screenshot2.png',
